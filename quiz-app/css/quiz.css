@@ -1,0 +1,352 @@
+/* reseting margin and padding */
+*{
+   margin: 0;
+   padding: 0;
+}
+
+/* styling body */
+body{
+   height: 100vh;
+   width: 100vw;
+   overflow: scroll;
+   background: #498692;
+}
+
+/* styling page ka main container */
+#page-ka-main-container{
+   user-select: none;
+   height: 100vh;
+   overflow-y: hidden;
+   width: 100vw;
+   /*background: blue;*/
+}
+
+
+/*=======================================*/
+/* coin and score section */
+/*=======================================*/
+/* styling score and coin container */
+#score-and-coin-container{
+   height: 8vh;
+   min-height: 40px;
+   /*border: 1px solid black;*/
+   width: 95.5%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /*background: red;*/
+   padding: 1% 2%;
+}
+
+/* styling coin box */
+#coin-box{
+   display: flex;
+   align-items: center;
+   background: #ffb5aa;
+   height: 70%;
+   width: 25%;
+   max-width: 100px;
+   border: 2px solid whitesmoke;
+   border-radius: 20px;
+   padding: 2px 4px;
+}
+
+/* styling image under coin box */
+#coin-box img{
+   height: 90%;
+   margin-right: 8px;
+}
+
+/* styling span that is under coin box */
+#coin-box span{
+   color: purple;
+   font-weight: bolder;
+   font-size: 1.2rem;
+}
+/*=======================================*/
+
+/* styling coin box */
+#score-box{
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   background: #ffb5aa;
+   height: 70%;
+   width: 20%;
+   max-width: 60px;
+   border: 2px solid whitesmoke;
+   border-radius: 20px;
+   padding: 2px 3%;
+}
+
+/* styling image under coin box */
+#score-box img{
+   height: 85%;
+   margin-right: 8px;
+}
+
+/* styling span that is under coin box */
+#score-box span{
+   color: purple;
+   font-weight: bolder;
+   font-size: 1.2rem;
+}
+
+
+
+/*=======================================*/
+/* ready section */
+/*=======================================*/
+.ready{
+ height: 50%;
+ border-radius: 8px;
+ width: 90%;
+ margin: auto;
+ background: #8b515c;
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ flex-direction: column;
+ justify-content: space-between;
+ margin: 15vh 2%;
+ margin-bottom: 30%;
+ align-items: center;
+ overflow: hidden;
+ padding: 6% 3%;
+}
+
+/* styling start button */
+#ready-btn{
+   outline: none;
+   border: 2px solid pink;
+   background: paleturquoise;
+   font-size: 2.5rem;
+   font-weight: bolder;
+   border-radius: 28px;
+   padding: 8px 12px;
+   box-shadow: 5px 5px 10px green, -5px -5px 10px green;
+}
+
+/* hover effect for button */
+#start-btn:hover{
+   transform: scale(0.9);
+}
+
+#ready-container h{
+ font-size: 1.5rem;
+ color: #191919;
+}
+
+#ready-container p{
+ font-size: 1.1rem;
+ color: #dbdbdb;
+}
+
+/* making animation for quiz container */
+/* making animation for quiz container */
+.reduce-height{
+   display: none;
+}
+
+
+
+
+
+
+
+
+/*=======================================*/
+/* quiz section */
+/*=======================================*/
+/* styling quiz container */
+/* it contains question and ans container */
+#quiz-container{
+   /*border: 2px solid pink;*/
+   margin: 2%;
+   height: 87%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   overflow: hidden;
+}
+
+/* making animation for quiz container */
+.reduce-the-height{
+   animation-name: harry;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+}
+@keyframes harry {
+   from{
+      height: 87%;
+   }
+   to{
+      height: 0%;
+   }
+}
+
+/* making animation for quiz container */
+.increase{
+   animation-name: clayey;
+   animation-duration: 1s;
+   animation-fill-mode: backwards;
+}
+@keyframes clayey {
+   from{
+      height: 0%;
+      display: flex;
+   }
+   to{
+      height: 87%;
+      display: flex;
+   }
+}
+
+
+
+
+/* styling question container */
+#question-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 91%;
+   height: 25%;
+   margin: 2% 0vw;
+   border: 5px solid #8098ff;
+   border-radius: 6px;
+   color: whitesmoke;
+   font-weight: bold;
+   font-size: 1.5rem;
+   padding: 2%;
+   text-align: center;
+}
+/*=======================================*/
+
+/* styling ans container */
+/* it contains ans boxes */
+#ans-container{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   align-content: space-between;
+   margin: 1% 0%;
+   /*border: 2px solid black;*/
+   height: 62%;
+   width: 100%;
+   /*background: blue;*/
+}
+
+/* styling ans box */
+/*it contains ans para ans right, wrong img*/
+.ans-box{
+   width: 93%;
+   display: flex;
+   border: 2px solid purple;
+   background: #994bb4;
+   border-radius: 22px;
+   min-height: 50px;
+   align-items: center;
+   max-height: 100px;
+   height: 15%;
+   margin: 2% 2%;
+   justify-content: center;
+   padding: 1%;
+   font-size: 1.3rem;
+   font-weight: bolder;
+   visibility: hidden;
+}
+
+/* styling paragraph of ans box */
+.ans-box p{ 
+   margin-left: 2%;
+   font-size: 1.2rem;
+   font-weight: bold;
+   width: 84%;
+   height: 100%;
+   display: inline-flex;
+   align-items: center;
+   /*background: gray;*/
+}
+
+/* styling wright, wrong image of ans box */
+.ans-box img{
+   float: left;
+   width: 14%;
+   max-width: 60px;
+   opacity: 0;
+   /*background: red;*/
+}
+
+
+/*=======================================*/
+/* next button section */
+/*=======================================*/
+
+
+/* styling image of next button */
+#next-btn img{
+   height: 90%;
+}
+
+/* styling span of next btn */
+#next-btn span{
+   font-size: 1.3rem;
+   color: #bd6e7d;
+   font-weight: bolder;
+}
+
+
+
+/*=======================================*/
+/*styling next btn page section*/
+/*=======================================*/
+#next-btn-box-container{
+   width: 90%;
+   height: 70%;
+   background: #55aaaa;
+   margin-left: 3.55%;
+   margin-top: 10%;
+   text-align: center;
+   border: 5px solid #1a439e;
+   border-radius: 6px;
+}
+
+/* styling its heading ( DETAILS ) */
+#heading{
+   padding-top: 8%;
+   color: green;
+   font-size: 2rem;
+}
+
+/*styling all paragraphs or next btn con..*/
+#next-btn-box-container p{
+   display: inline-block;
+   font-size: 1.3rem;
+   margin-top: 6%;
+}
+
+/* styling next button */
+#next-btn-box-container button{
+   font-size: 2rem;
+   font-weight: bolder;
+   outline: none;
+   padding: 4px 20px;
+   border-radius: 20px;
+   border: 3px solid purple;
+   margin-top: 10%;
+   background: pink;
+   color: slateblue;
+}
+
+
+
+
+/*=======================================*/
+/*styling rotate screen para*/
+/*=======================================*/
+/* styling rotate screen para */
+#rotate-screen-para{
+ color: whitesmoke;
+ font-size: 2rem;
+ display: none;
+}

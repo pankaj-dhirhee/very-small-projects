@@ -1,0 +1,45 @@
+/* reseting margin & padding */
+*{
+ margin: 0;
+ padding: 0;
+}
+html{
+  height: -webkit-fill-available;
+}
+body{
+ background: #152d33;
+ height: -webkit-fill-available;
+}
+
+/*=========================================*/
+/* nav-bar section */
+/*=========================================*/
+nav{
+ background: green;
+ height: 9vh;
+ display: flex;
+ width: 100%;
+ align-items: center;
+ min-height: 45px;
+}
+
+/* styling logo and its para container */
+#logo-and-its-para-container{
+ display: flex;
+ align-items: center;
+ height: 75%;
+}
+
+/* styling logo image ka tag */
+#logo-and-its-para-container img{
+ height: 95%;
+ margin-left: 8px;
+ margin-right: 5px;
+}
+
+/* styling paragraph or logo */
+#logo-and-its-para-container p{
+ font-size: 1.1rem;
+ font-weight: bolder;
+ color: whitesmoke;
+}

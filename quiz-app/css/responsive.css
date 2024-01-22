@@ -1,0 +1,36 @@
+/* media query for mobile landscape mode */
+/* hiding all contentband showing the rorate screen para when jeight or device is less than 400px */
+@media(min-height: 50px) and (max-height: 420px){
+ /* making body => display: flex */
+ body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ /* hiding the whole content or webpage */
+ #page-ka-main-container{
+  display: none;
+ }
+ 
+ /* displaying the rotate screen para */
+ #rotate-screen-para{
+  display: inline-block;
+ }
+}/* media query */
+/*=======================================*/
+
+
+
+/*=========================================*/
+/* media query for tablets portrate mode */
+/*=========================================*/
+@media screen and (min-width: 700px) and (orientation: landscape){
+   #ans-container{
+      grid-template-columns: repeat(2, 1fr);
+   }
+   
+   #next-btn{
+      width: 196%;
+   }
+}

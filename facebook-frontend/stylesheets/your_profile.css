@@ -1,0 +1,503 @@
+/*-------------------------------------------*/
+/*              NAVBAR SECTION               */
+/*-------------------------------------------*/
+@media(max-width: 799px){
+  #navbar{
+    display: none;
+  }
+}
+
+
+@media(min-width: 800px){
+  .navbar-for-mobile{
+    display: none;
+  }
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*             PROFILE SECTION               */
+/*-------------------------------------------*/
+.profile-section{
+  width: 100%;
+  background: #e2e2e2;
+  padding: 10px 0px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.container-for-profile-banner{
+  width: 100%;
+  
+}
+
+.profile-img-and-data-container{
+  width: 100%;
+  
+}
+
+.profile-img-and-data-container .left{  
+  padding: 4px 7px;
+  width: 100%;
+}
+
+.container-of-profile-image{
+  height: 150px;
+  aspect-ratio: 1/1;
+  background: #c5c5c5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid black;
+  position: relative;
+}
+
+.container-of-profile-image img{
+  height: 75%;
+}
+
+.box-to-add-profile-image{
+  height: 25%;
+  aspect-ratio: 1/1;
+  background: #c5c5c5;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid black; 
+  position: absolute;
+  top: 72.5%;
+  left: 72.5%;
+  overflow: hidden;
+  background-image: url('../assets/camera-icon.png');
+  background-size: 70% 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.box-to-add-profile-image img{
+  height: 70%;
+}
+
+#file-input-for-profile-image{
+  opacity: 0;
+}
+
+
+.profile-img-and-data-container .right{
+  width: 100%;
+  padding: 7px 7px;
+}
+
+.profile-right-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.profile-right-wrapper .profile-username{
+  font-size: 1.7rem;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  margin-bottom: 0.4rem;
+}
+
+.profile-right-wrapper .button{
+  width: 40%;
+  height: 45px;
+  border: none;
+  background: #2b6dff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 10px;
+}
+
+.profile-right-wrapper .button img{
+  height: 60%;
+  margin-right: 15px;
+}
+
+.profile-right-wrapper .button span{
+  display: inline-block;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+.profile-right-wrapper #three-dots-button{
+  width: auto;
+  aspect-ratio: 1.2/1;
+}
+
+.profile-right-wrapper #three-dots-button img{
+  margin-right: 0px;
+}
+
+.profile-right-wrapper .bottom-box{
+  margin-top: 15px;
+  width: 100%;
+}
+
+.bottom-box #more-about-yourself{
+  font-size: 1.1rem;
+}
+
+.bottom-box .box{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-box .box span{
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.bottom-box .box a{
+  text-decoration: none;
+  font-size: 1rem;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*       photoes-and-avatara-section         */
+/*-------------------------------------------*/
+.photoes-and-avatara-section{
+  height: 70px;
+  padding: 10px 7px;
+  background: #e2e2e2;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 7px;
+  display: none;
+}
+
+.photoes-and-avatara-section .button{
+  height: 93%;
+  width: 40%;
+  background: #d5d5d5;
+  border: none;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.photoes-and-avatara-section .button img{
+  height: 66%;
+  margin-right: 10px;
+}
+
+.photoes-and-avatara-section .button span{
+  font-size: 1rem;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*              UPLOADS SECTION              */
+/*-------------------------------------------*/
+.main-container-of-upload-image{
+  padding: 10px 7px;
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  height: 120px;
+  background: #e2e2e2;
+  flex-wrap: wrap;
+  margin-bottom: 3px;
+}
+
+/* container for prifile & what in your mind */
+.top-wrapper{
+  display: flex;
+  justify-content: space-between;
+  gap: 3%;
+  height: 48%;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+/* Contains profile image */
+.container-of-profile{
+  height: 93%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d5d5d5;
+  border-radius: 50%;
+}
+
+/* styling image of profile */
+.container-of-profile img{
+  height: 75%;
+}
+
+/* It contains text [ what in your mind ] */
+.container-of-what-in-your-mind{
+  height: 90%;
+  display: flex;
+  align-items: center;
+  width: 85%;
+  background: #d5d5d5;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/* Styling anchor tag */
+.container-of-what-in-your-mind a{
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Styling span [ what in your mind ] */
+.container-of-what-in-your-mind span{
+  font-size: 1rem;
+}
+
+/* Contains a img by clicking it you can upload img */
+.container-of-upload-image{
+  height: 110%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  position: relative;
+}
+
+.container-of-uploads-option{
+  width: 100%;
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border-top: 1px solid #b9b9b9;
+}
+
+.container-of-uploads-option .buttons{
+  border: none;
+  height: 80%;
+  background: black;
+  background: transparent;
+}
+
+.container-of-uploads-option .buttons img{
+  height: 60%;
+  margin-right: 8px;
+}
+
+#live-videos-btn img{
+  height: 100%;
+}
+
+.container-of-uploads-option .buttons span{
+  font-size: 0.9rem;
+  display: none;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*       PEOPLE YOU MAY KNOW SECTION         */
+/*-------------------------------------------*/
+.main-container-people-you-may-know{
+  height: 415px;
+  background: #e2e2e2;
+  padding: 10px 7px;
+  padding-bottom: 7px;
+  padding-left: 0px;
+  padding-right: 0;
+  margin-bottom: 8px;
+  display: none;
+}
+
+.main-container-people-you-may-know h{
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-left: 7px;
+}
+
+.main-container-people-you-may-know .slider{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  margin: 2% 0px;
+  overflow-x: auto;
+  align-items: center;
+}
+
+.slider .card-of-people-you-may-know:nth-child(1){
+  margin-left: 7px;
+}
+
+.card-of-people-you-may-know{
+  border: 1px solid black;
+  border-radius: 6px;
+  min-width: 220px;
+  aspect-ratio: 1/1.6;
+  overflow: hidden;
+  margin-right: 6px;
+}
+
+.card-of-people-you-may-know .top{
+  height: 78%;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-of-people-you-may-know .top img{
+  width: 100%;
+}
+
+.card-of-people-you-may-know .bottom{
+  padding: 5px;
+  height: 22%;
+}
+
+.card-of-people-you-may-know .bottom .username{
+  font-size: 1rem;
+}
+
+.add-friend-button{
+  height: 65%;
+  width: 100%;
+  outline: none;
+  background: transparent;
+  border: 1px solid #646464;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  justify-content: center;
+}
+
+.add-friend-button img{
+  height: 40%;
+  margin-right: 5px;
+}
+
+.add-friend-button span{
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2b6dff;
+}
+/*===========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*              POSTS SECTION                */
+/*-------------------------------------------*/
+.posts-section{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card-of-post{
+  width: 100%;
+  background: #e2e2e2;
+  margin: 4px 0px;
+  overflow: hidden;
+  margin-bottom: 1px;
+}
+
+.card-of-post .top{
+  height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 7px;
+}
+
+.card-of-post .top .box-of-profile{
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d5d5d5;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.card-of-post .top .box-of-profile img{
+  height: 70%;
+}
+
+.box-of-post-details{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-of-post-details .username-of-post{
+  font-weight: bold;
+}
+
+.box-of-post-details .time-of-post{
+  opacity: 0.8;
+}
+
+.card-of-post .middle{
+  width: 100%;
+  overflow: hidden;
+}
+.card-of-post .middle #posted-image{
+  width: 100%;
+}
+
+.card-of-post .bottom{
+  height: 47px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.card-of-post .bottom .box{
+  height: 80%;
+  aspect-ratio: 2.6/1;
+  background: #d5d5d5;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-of-post .bottom .box img{
+  height: 70%;
+}
+/*===========================================*/

@@ -1,0 +1,286 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #d1d1d1;
+  width: 100vw;
+}
+
+
+
+/*-------------------------------------------*/
+/*              NAVBAR SECTION               */
+/*-------------------------------------------*/
+/* 1. SECTION 1 */
+#navbar{
+  background: #e2e2e2;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px 7px;
+  height: 75px;
+}
+
+/* Styling both section one & two */
+.section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Styling section one */
+.section-one{
+  height: 48%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* Contains facebook logo, text & search image */
+.section-one .left{
+  width: 50%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling facebook log & search image of left */
+.section-one .left img{
+  height: 100%;
+  display: none;
+}
+
+/* Stylimg text[ facebook ] */
+.section-one .left span{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2b6dff;
+}
+
+/* Right side contains box of search image & 3_lines */
+.section-one .right{
+  height: 99%;
+  width: 20%;
+  min-width: 80px;
+  max-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling box of search image & box of 3_line */
+.section-one .right .box{
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #c5c5c5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling image inside both or boxes */
+.section-one .right .box img{
+  height: 90%;
+}
+
+/* Styling image inside box of search */
+#box-for-search-icon img{
+  height: 80%;
+}
+
+
+/* SECTION 2 */
+/* Contains icon - home, contact, message, bell */
+#section-two{
+  height: 49%;
+  margin-top: 5px;
+  padding: 0 2.5px;
+}
+
+/* Styling container or icons */
+#section-two .container-of-icons{
+  height: 85%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling images inside container_of_icoms */
+#section-two .container-of-icons img{
+  height: 90%;
+}
+
+/* Hiding three_line_image for mobiles */
+#section-two .container-of-icons .three-lines{
+  display: none;
+}
+
+/* Styling second container or icons */
+#section-two .second-container-of-icons{
+  height: 85%;
+  width: 30%;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  display: none;
+}
+
+/* Styling all boxes inside second_container_of_icon */
+#section-two .second-container-of-icons .box{
+  height: 95%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #c5c5c5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+
+/* Styling images inside box of second_container_of_icon */
+#section-two .second-container-of-icons .box img{
+  height: 90%;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*           MEDIA QUERY SECTION             */
+/*-------------------------------------------*/
+@media(min-width: 800px){
+
+  #navbar{
+    flex-wrap: nowrap;
+    height: 50px;
+    justify-content: space-between;
+  }
+  
+  .section{
+    width: 50%;
+    height: 93%;
+  }
+  
+  .section-one{
+    width: 30%;
+    min-width: 150px;
+    max-width: 150px;
+  }
+  
+  .section-one .left span{
+    display: none;
+  }
+  
+  .section-one .left img{
+    display: inline-block;
+  }
+  
+  .section-one .left .search-icon{
+    display: none;
+  }
+  
+  .section-one .right #box-for-three-lines{
+    display: none;
+  }
+  
+  section-one .right #box-for-search-icon{
+    display: inline-block;
+  }
+  
+  #section-two{
+    margin-top: 0;
+    width: 75%;
+    height: 93%;
+  }
+  
+  #section-two .container-of-icons .three-lines{
+    display: inline-block;
+  }
+  
+  #section-two .container-of-icons{
+    height: 80%;
+  }
+  
+  #section-two .container-of-icons img{
+    height: 80%;
+  }
+  
+  #section-two .container-of-icons #message-icon{
+    display: none;
+  }
+  
+  #section-two .container-of-icons #bell-icon{
+    display: none;
+  }
+  
+  #section-two .second-container-of-icons{
+    display: flex;
+  }
+  
+}
+/*===========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*         NAVBAR FOR PROFILE PAGE           */
+/*-------------------------------------------*/
+/* Note ->
+   this navbar will shown in profile page.
+   Media query for this is in your_profile.css.
+*/
+.navbar-for-mobile{
+  width: 100%;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 7px;
+  background: #e2e2e2;
+}
+
+.navbar-for-mobile .left, .right{
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-for-mobile .left{
+  max-width: 60%;
+  overflow: hidden;
+}
+
+.box-of-left-arrow-icon{
+  height: 85%;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar-for-mobile .left img{
+  height: 98%;
+}
+
+.navbar-for-mobile .left{
+  font-size: 1.1rem;
+}
+
+.navbar-for-mobile .right .box-of-search-icon{
+  height: 82%;
+  aspect-ratio: 1/1;
+}
+
+.navbar-for-mobile .right .box-of-search-icon img{
+  height: 98%;
+}
+/*===========================================*/

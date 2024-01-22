@@ -1,0 +1,72 @@
+/* styling page ka main container */
+#page-ka-main-container{
+   user-select: none;
+   height: 100vh;
+}
+
+
+/* styling start container */
+#start-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #197d95;
+    width: 95%;
+    height: 70%;
+    position: relative;
+    margin: 15% auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* styling welcome heading */
+#Welcome-heading{
+ font-size: 1.5rem;
+ font-weight: bolder;
+ margin: 1rem 0rem;
+}
+
+/* styling heading(this app contains...) */
+#heading{
+ font-size: 1.4rem;
+ font-weight: bold;
+ color: #262626;
+}
+
+/* styling all normal paras  */
+.n-para{
+ font-size: 1.2rem;
+ color: whitesmoke;
+}
+
+/* styling creator para */
+#creator{
+ text-align: center;
+ padding: 4% 0px;
+ background: #8ab5cf;
+ color: black;
+ font-size: 1.2rem;
+}
+
+/* styling start button container */
+#btn-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+/* styling play button gif */
+#playBtn{
+   border-radius: 28px;
+   padding: 8px 12px;
+   box-shadow: 5px 5px 10px green, -5px -5px 10px green;
+   height: 40px;
+}
+
+/* hover effect for button */
+#start-btn:hover{
+   transform: scale(0.9);
+}

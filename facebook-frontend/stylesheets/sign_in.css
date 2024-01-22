@@ -1,0 +1,51 @@
+/* Note ->
+   This page is styled by 'login.css'.
+   In this css only some changes are done.
+*/
+
+
+/*-------------------------------------------*/
+/*               SIGN IN FORM                */
+/*-------------------------------------------*/
+.content {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form{
+  height: auto;
+}
+
+form span{
+  font-size: 1.4rem;
+}
+
+#birth_date{
+  width: 100%;
+}
+
+#box-for-gender{
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  width: 17rem;
+  min-width: 170px;
+}
+
+#box-for-gender span{
+  display: flex;
+  align-items: center;
+}
+
+#box-for-gender span span{
+  font-size: 1.9rem;
+}
+
+#box-for-gender span input{
+  margin: 0;
+  margin-right: 5px;
+}
+/*===========================================*/

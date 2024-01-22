@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Page title</title>
+ 
+ <!-- linking to quiz css -->
+ <link rel="stylesheet" href="../css/quiz.css">
+ 
+ <!-- linking to responsive css -->
+ <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<!--all content main container-->
+<div id="page-ka-main-container">
+<!--=====================================-->
+<!-- score ans coin -->
+<!--=====================================-->
+<div id="score-and-coin-container">
+ <!-- coin-box  -->
+ <div id="coin-box">
+    <img src="../assets/coin.png"/>
+    <span id="coin-span"> 100 </span>
+ </div>
+
+<!-- score-box  -->
+ <div id="score-box">
+    
+    <span id="score-span"> 0/5 </span>
+ </div>
+</div><!-- score-and-coin-container -->
+
+
+<!--=====================================-->
+<!-- ready button section -->
+<!--=====================================-->
+<div id="ready-container" class="ready">
+ <div id="btn-container">
+    <button id="ready-btn">READY</button>
+ </div><!-- btn-container -->
+ 
+ <h>INSTRUCTIONS</h>
+ 
+ <p>
+  You have to give answer only in 30s
+ </p>
+ <p>
+  score will increase when answer is right
+ </p>
+ <p>
+  after 10 questions result will displayed
+ </p>
+ <p>
+  coin will also increase when right ans
+ </p>
+</div><!-- ready-container -->
+
+
+
+
+
+
+<!--=====================================-->
+<!-- quiz section -->
+<!--=====================================-->
+<div id="quiz-container" class="quiz">
+ <!-- question container -->
+ <div id="question-container">
+  <p id="que-para"> </p>
+ </div><!-- question-container -->
+ 
+ <!-- answer container -->
+ <div id="ans-container">
+  <!-- box 1 -->
+  <div class="ans-box" id="ans-box1">
+       
+  </div><!-- ans-box -->
+  
+  <!-- box 2 -->
+  <div class="ans-box" id="ans-box2">
+       
+  </div><!-- ans-box -->
+  
+  <!-- box 3 -->
+  <div class="ans-box" id="ans-box3">
+       
+  </div><!-- ans-box -->
+  
+  <!-- box 4 -->
+  <div class="ans-box" id="ans-box4">
+       
+  </div><!-- ans-box -->
+ </div><!-- ans-container -->
+</div><!-- quiz-container -->
+
+
+
+
+
+<!--====================================-->
+<!-- next button page -->
+<!--====================================-->
+<div id="next-btn-box-container">
+ <h2 id="heading">
+    DETAILS
+ </h2>
+ <p id="ans-status">
+   Your answer was - Wrong
+ </p>
+ <p id="right-ans">
+   Right answer was - six
+ </p>
+ <p id="score-incremented">
+   Score Incremented - 0
+ </p>
+ <p id="coin-collected">
+   Coin collected - 10
+ </p>
+ <p>
+   Click the next for next Que
+ </p>
+ 
+ <button id="next-btn">
+    NEXT QUESTION
+ </button>
+  
+</div><!-- next-btn-box-container -->
+</div><!--#page ka main container-->
+
+
+
+
+
+<!--====================================-->
+<!-- rotate screen para -->
+<!--====================================-->
+<p id="rotate-screen-para">
+ PLEASE ROTATE YOUR DEVICE
+</p>
+
+
+<!-- linking to quiz js -->
+<script src="../js/quiz.js"></script>
+</body>
+</html>
